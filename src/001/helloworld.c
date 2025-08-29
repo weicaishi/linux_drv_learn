@@ -1,11 +1,13 @@
 #include <linux/module.h>
 
-static int __init hello_init(void) {
+static int __init hello_init(void)
+{
     printk(KERN_INFO "Hello, World! Driver initialized.\n");
     return 0;
 }
 
-static void __exit hello_exit(void) {
+static void __exit hello_exit(void)
+{
     printk(KERN_INFO "Goodbye, World! Driver exiting.\n");
 }
 
